@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Face Login</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Script -->
+    <script defer src="assets/js/face-api.min.js"></script>
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="container" id="mainContainer">
+      <div class="video-container" id="videoContainer">
+        <video id="video" width="250" height="200" autoplay muted></video>
+        <span id="faceIDResult"></span>
+      </div>
+      <div class="login-page-container" id="loginPageContainer">
+        <div class="control-container" id="controlContainer">
+          <div class="input-container">
+            <input id="usernameInput" type="text" placeholder="Username.." />
+            <input id="passwordInput" type="password" placeholder="Password.." />
+          </div>
+          <div class="button-container">
+            <button id="loginButton">Login</button>
+            <button id="faceIdButton">FaceID Loading...</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
